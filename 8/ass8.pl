@@ -39,3 +39,4 @@ preferrable(A,B,C):-flight(A,C,B,X,_),((X<400);(C = air_canada)).
 united_and_air_canada(A,B):-(flight(A,X,B,_,_),(X=united)) -> (flight(A,Y,B,_,_),(Y=air_canada)).
 
 
+

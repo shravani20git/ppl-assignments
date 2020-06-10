@@ -1,65 +1,95 @@
-class Dog:#public
-    def __init__(self, breed):
-        self.breed = breed
-class Cat:#public
+class Dog:  # public
     def __init__(self, breed):
         self.breed = breed
 
-class Tiger:#protected
-    _breed = None
-    def __init__(self, breed):
-        self._breed = breed
-    def display(self):
-        print("breed:",self._breed)
-class Wolf:#protected
-    _breed = None
-    def __init__(self, breed):
-        self._breed = breed
-    def display(self):
-        print("breed:",self._breed)
-class Monkey:#protected
-    _breed = None
-    def __init__(self, breed):
-        self._breed = breed
-    def display(self):
-        print("breed:",self._breed)
-class Parrot:#protected
-    _breed = None
-    def __init__(self, breed):
-        self._breed = breed
-    def display(self):
-        print("breed:",self._breed)
-class  Cheetas:#public
+
+class Cat:  # public
     def __init__(self, breed):
         self.breed = breed
-class Hourse:#private
-    __breed = None
+
+
+class Tiger:  # protected
+    _breed = None
+
     def __init__(self, breed):
-        self.__breed = breed
+        self._breed = breed
+
     def display(self):
-        print("breed:",self.__breed)
-class Owl:#private
+        print("breed:", self._breed)
+
+
+class Wolf:  # protected
+    _breed = None
+
+    def __init__(self, breed):
+        self._breed = breed
+
+    def display(self):
+        print("breed:", self._breed)
+
+
+class Monkey:  # protected
+    _breed = None
+
+    def __init__(self, breed):
+        self._breed = breed
+
+    def display(self):
+        print("breed:", self._breed)
+
+
+class Parrot:  # protected
+    _breed = None
+
+    def __init__(self, breed):
+        self._breed = breed
+
+    def display(self):
+        print("breed:", self._breed)
+
+
+class Cheetas:  # public
+    def __init__(self, breed):
+        self.breed = breed
+
+
+class Hourse:  # private
     __breed = None
+
     def __init__(self, breed):
         self.__breed = breed
 
     def display(self):
-        print("breed:",self.__breed)
+        print("breed:", self.__breed)
 
-class Deer :#private
+
+class Owl:  # private
     __breed = None
+
     def __init__(self, breed):
         self.__breed = breed
-    def display(self):
-        print("breed:",self.__breed)
 
-sam = Dog(breed='Lab')
+    def display(self):
+        print("breed:", self.__breed)
+
+
+class Deer:  # private
+    __breed = None
+
+    def __init__(self, breed):
+        self.__breed = breed
+
+    def display(self):
+        print("breed:", self.__breed)
+
+
+sam = Dog('Lab')
 print(sam.breed)
 sam.breed = 'German Shephard '
 print(sam.breed)
 frank = Cat('Huskie')
 print(frank.breed)
-frank.breed='Persian'
+frank.breed = 'Persian'
 print(frank.breed)
 turk = Tiger('Siberian')
 turk.display()
@@ -69,7 +99,7 @@ haley = Monkey('Baboon')
 haley.display()
 p = Parrot('parakeets')
 p.display()
-ch =Cheetas('Asiatic')
+ch = Cheetas('Asiatic')
 print(ch.breed)
 hr = Hourse('Arabian')
 hr.display()
